@@ -26,7 +26,7 @@ namespace AdventureWorksThumbs
             // Print connection string to demonstrate configuration object is populated
             Console.WriteLine(_config.GetConnectionString("DataConnection"));
 
-            // Check if the thumbnails folder exists and, if not, create it
+            // 📁 Check if the thumbnails folder exists and, if not, create it
             var thumbnailsFolder = "thumbnails/";
             if (!Directory.Exists(thumbnailsFolder))
             {
@@ -63,7 +63,7 @@ namespace AdventureWorksThumbs
                                 // fill it
                                 distinctThumbnails.GetBytes(0, 0, thumbnailBytes, 0, thumbnailByteLength);
 
-                                //Save the thumbnail to a file (also in a thumbnails folder)
+                                // 🗒 Save the thumbnail to a file (also in a thumbnails folder)
                                 await File.WriteAllBytesAsync(Path.Combine(thumbnailsFolder, thumbnailFileName), thumbnailBytes);
                             }
                         }
