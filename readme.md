@@ -32,3 +32,13 @@ Here's a sample of a row, formatted to JSON:
   ]
 }
 ```
+
+You will need an appsettings.json for this app to run anew. All you need it to look like is this:
+
+```json
+{
+  "ConnectionStrings": {
+    "DataConnection": "Server=tcp:{serveraddress},1433;Initial Catalog=AdventureWorks;Persist Security Info=False;User ID={userid};Password={password};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+  }
+}
+```

@@ -4,7 +4,7 @@
     {
       "file": "readme.md",
       "line": 1,
-      "description": "# README\n\nStart here and go through the readme to understand what this solution is meant for."
+      "description": "# README\n\nStart here and go through the readme to understand what this solution is meant for.\n\n## Important!\n\nYou will need an appsettings.json for this app to run anew. All you need it to look like is this:\n\n```json\n{\n  \"ConnectionStrings\": {\n    \"DataConnection\": \"Server=tcp:{serveraddress},1433;Initial Catalog=AdventureWorks;Persist Security Info=False;User ID={userid};Password={password};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;\"\n  }\n}\n```"
     },
     {
       "file": "Program.cs",
