@@ -1,0 +1,20 @@
+{
+  "title": "AdventureWorksThumbs",
+  "steps": [
+    {
+      "file": "readme.md",
+      "line": 1,
+      "description": "# README\n\nStart here and go through the readme to understand what this solution is meant for."
+    },
+    {
+      "file": "Program.cs",
+      "line": 11,
+      "description": "# Program\n\nThe pattern for this program->app setup was obtained after reading this writeup on the lack of solid docs from MS on Console apps and appsettings.json:\n\nhttps://blog.bitscry.com/2017/05/30/appsettings-json-in-net-core-console-app/"
+    },
+    {
+      "file": "App.cs",
+      "line": 22,
+      "description": "# SQL\n\nBasically, we need to pull all distinct thumbnails and save them as files to the file system, using the name that comes with the product.  So after getting the distinct set of file names and bytes, we will loop through them and each file in the loop using the file name.  This is down-and-dirty so there's not much in the way of polymorphism here."
+    }
+  ]
+}
